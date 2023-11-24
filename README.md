@@ -1,6 +1,9 @@
 # iOSScripts
 4 different scripts and executable apps to download brew, cocoapods+xcodegen and additionally contains fix script for KMP project with Xcode 15
 
+## Stack
+ - AppleScript
+
 ## Requirements
  - MacOS
  - Internet connection (except GenerateProject script)
