@@ -1,33 +1,25 @@
 # iOSScripts
+4 different scripts and executable apps to download brew, cocoapods+xcodegen and additionally contains fix script for KMP orject with Xcode 15
 
-## Generate Project script
-```
-tell application "Terminal"
-	try
-		do shell script "/usr/local/bin/xcodegen generate --spec /Users/user/Documents/lk-mobile/ioslk/Project.yml"
-	on error errMsg number errNum
-		display dialog "Путь к yaml файлу не найден в Документах. Перенесите файл Project.yml в строку ниже:" default answer ""
-		set projectPath to text returned of result
-		do script "/usr/local/bin/xcodegen generate --spec " & projectPath
-	end try
-end tell
-```
+## Requirements
+ - MacOS
+ - Internet connection (except GenerateProject script)
 
-## CocoaPods and XcodeGen install
-```
-tell application "Terminal"
-	do script "brew install cocoapods"
-	delay 5
-	do shell script "/usr/local/bin/brew list | grep cocoapods"
-	if result contains "cocoapods" then
-		do script "/usr/local/bin/brew install xcodegen"
-	end if
-end tell
-```
+## What contains
+ - Scripts folder with editable scripts if you'll something wrong
+ - Executable folder where these scripts exported as .app
 
-## Brew installer
-```
-tell application "Terminal"
-	do script "brew install wget"
-end tell
-```
+### BrewIstaller
+ - Just plain BrewHome installer
+
+### Brew+CocoaPods+Gen
+ - Ultimate installer for Brew, CocoaPods and XcodeGen
+
+### GenerateProject
+ - XcodeGen .app with script to build .xcproj file to avoid commiting it in github (use .gitignore to exclude from commiting)
+
+### GradlewFix
+ - After updating Xcode to 15th version, in KMP project file you can get error "gradlew permission denied". This is a fix method for it.
+
+
+
