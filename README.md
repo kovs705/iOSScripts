@@ -1,5 +1,5 @@
 # iOSScripts
-4 different scripts and executable apps to download brew, cocoapods+xcodegen and additionally contains fix script for KMP orject with Xcode 15
+4 different scripts and executable apps to download brew, cocoapods+xcodegen and additionally contains fix script for KMP project with Xcode 15
 
 ## Requirements
  - MacOS
