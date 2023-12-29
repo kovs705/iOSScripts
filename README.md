@@ -11,6 +11,7 @@
 ## What contains
  - Scripts folder with editable scripts if you'll something wrong
  - Executable folder where these scripts exported as .app
+ - Two Gradle scripts to generate your ios project inside Android Studio + generate iOS localization from Android strings values
 
 ### BrewIstaller
  - Just plain BrewHome installer
